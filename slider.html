@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Divs Side by Side</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 150px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .box:hover {
+      transform: scale(1.1); /* Slightly increase size on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    }
+
+    .box i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .box h6 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .box p {
+      margin: 10px 0 0 0;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <img src="t1.png"><br>
+      <h6><b>Clarified Vision & Target</b></h6>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+    </div>
+    <div class="box">
+      <img src="t2.png"><br>
+      <h6><b>High Performanance</b></h6>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+    </div>
+    <div class="box">
+      <img src="t1.png"><br>
+      <h6><b>Maintan Security</b></h6>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+    </div>
+    <div class="box">
+      <img src="t1.png"><br>
+      <h6><b>Better Stratagy & Quality</b></h6>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+    </div>
+  </div>
+</body>
+</html>
